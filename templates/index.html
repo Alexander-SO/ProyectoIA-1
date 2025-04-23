@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clasificador de Noticias BBC</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Título del proyecto -->
+    <h1>Proyecto de Ingeniería en Sistemas</h1>
+    <h2 style="text-align: center; color: #34495e; font-weight: 500;">Clasificación de Noticias con Técnicas de Inteligencia Artificial</h2>
+    <p style="text-align: center; color: #566573; font-size: 18px;">
+        Proyecto académico desarrollado en el curso de Inteligencia Artificial de la Universidad Rafael Landívar.
+    </p>
+
+    <div class="container">
+        <!-- Área de entrada de texto -->
+        <div id="BottonRow">
+            <h1>IA DE NOTICIAS :d</h1>
+            <textarea id="inputText" placeholder="COLOCA TU NOTICIA AQUI   " rows="6"></textarea>
+        </div>
+
+        <!-- Botón y salida -->
+        <div id="BottonRow">
+            <button onclick="classifyText()">Clasificar</button>
+            <div id="output"></div>
+        </div>
+<!-- Tabla de resultados -->
+        <h3 style="text-align: center;">Modelo de Clasificación</h3>
+        <table id="reportTable" border="1">
+            <thead>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Precisión</th>
+                    <th>Exhaustividad</th>
+                    <th>Puntaje F1</th>
+                    <th>Soporte</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <!-- Créditos del proyecto -->
+        <p style="text-align: center; margin-top: 40px; font-size: 18px; color: #2c3e50;">
+            Desarrollado por: Daniel Molina, Alexander Solórzano, Omar Vásquez
+        </p>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
